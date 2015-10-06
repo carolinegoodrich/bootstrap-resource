@@ -1,0 +1,33 @@
+body {
+    background-color:floralwhite;
+
+}
+
+.jumbotron {
+background-image: linear-gradient(to top, #66C2C2 0%, #009999 90%);
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+.chaptersBox {
+    background-color:white;
+    border: solid;
+    border: 2px; 
+    border-color: #009999;
+    height: 200px; 
+    margin: 40px; 
+    width: 300px; 
+
+}
+
+.chaptersBox a {
+    text-align: center; 
+}
+
+
+footer {
+    margin-top: 10px;
+    padding-top: 40px;
+    text-align:center;
+ }

@@ -12,7 +12,7 @@
     <link href="http://carolinegoodrich.github.io/bootstrap-resource/css/style.css" rel="stylesheet">
 
 </head>
-    <body>http://carolinegoodrich.github.io/bootstrap-resource
+    <body>
     <!-- nav links -->
     <ul class="nav nav-tabs">
         <li role="presentation" ><a href="http://carolinegoodrich.github.io/bootstrap-resource/index.html">Home</a></li>
@@ -25,23 +25,106 @@
             <ul class="dropdown-menu">
                 <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter1.html">Chapter 1</a></li>
                 <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter2.html">Chapter 2</a></li>
+                <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter3.html">Chapter 3</a></li>
             </ul>
         </li>
     </ul>
         <div class="container">
         <h1>CHAPTER TWO:</h1>
-         <h3>Coming Soon, little learners!</h3>
-
-        
+         <h3>STYLIN’ AND WILDIN’: An Introduction to CSS</h3>
+<div class="row">
+     <div class="col-md-12">
+    <p>Now that you have a basic understanding of how to get content on a web page, let’s focus on how to make it not look so boring!</p>
+    <p>In this chapter we’re going to focus on how to organize our code into sections, known as either classes or ID’s, and how to style those sections along with some of the other tags we learned about in the first chapter. </p>
+         <p>In order to do this, we’re going to start on a little project. I know what you’re thinking, “Oh wow, homework.. cool, Caroline.” Trust me, I know. I’m lame, but we’re going to create this project and build on it throughout this course. That way you literally see the concepts building on one another and you don’t feel cheated and lied to unlike in your math courses. </p>
+         <p>Create a new folder on your computer, and name it “ABOUTME”. Create another folder inside of that folder, and name that one, “images”. Open that folder up using a text editor of your preference, but if your text editor doesn’t have that option just make sure to save your HTML files inside the ABOUTME file. </p>
+         <p>Next step: Create an INDEX.HTML file like we did before! We’re going to actually put meaningful content on this page, though. </p>
+         <p>One way to organize your code into sections is by putting them into containers, so to speak. We do this by using div tags. These tags can either be a div ID tag or a div CLASS tag.</p>
+         <p><strong>Differences between DIV ID and DIV CLASS:</strong></p>
+         <div class="row">
+            
+        <div class="col-md-6">
+             <strong>CLASS</strong>
+            <p>Class can be applied to multiple div tags. An example of this would be if you wanted to style buttons on different pages the same way. You could have a tag that was,   <pre><code class=language-html>
+    &lt; div class=”styledButton”>
+    </code></pre>. You could then use this to style multiple selections. Class tags can be selected  using a “.” in front of the name. Remember this for later!</p></div>
+            
+         <div class="col-md-6">
+             <strong>ID</strong>
+             <p>Div ID can only be applied to ONE section. This can be used if you want to have a specific style that is only applied to one section, for example a sidebar on the homepage that does not show up on any other pages. These can be selected using a “#” in front of the name, like this: </P>
+                  <pre><code class=language-html>
+    &lt; div id=”styledButton”>
+    </code></pre>
+         <p>Add this to your list of things to remember for later!</p>
+             </div>
+          </div>
+    
+ </div>
+    <p>Take a look at my example code below and try it out for yourself, replacing my content with your own. </p>
+    
+    <div class="row">
+        <div class="col-md-6">
+                    <img src="http://carolinegoodrich.github.io/bootstrap-resource/images/c2/code1.png" width="550px" height="500px">
+        </div>
+        <div class="col-md-6">
+                        <img src="http://carolinegoodrich.github.io/bootstrap-resource/images/c2/code1Output.png" width="550px" height="500px">
+        </div>
     </div>
-        
-        
+    <br>
+    <p><strong>Now that you have your code, let’s make it not look so boring!</strong></p>
+    <p>Create a new file in your about me folder, name it “style.css”. It is important that the file extension ends with .css, this is how we tell the web page that this is a “Cascading Style Sheet” file, and it needs to be loaded in order to show the webpage in a certain way. </p>
+    <p>Now, we’re going to go back to your index.html file, and in the HEADER portion of your file, before the TITLE section, we’re going to add: </p>
+    <pre><code class=language-html>
+    &lt;link  href="/style.css" rel="stylesheet">
+    </code></pre>
+    
+    <p>This tells your index.html page to load the file “style.css” when the page first loads, that way index.html loads looking the way we want it to.</p>
+    
+    <p>Now, let’s edit our stylesheet. Remember those . and # references I told you to remember? We’re going to Bring them back. </p>
+    <p>You style portions of your page by typing the selector, and creating a section for the styles you want. You can change the width, height, color, font-size, font-family, and so many other things! Take a look at my example, next to each of the attributes I have commented what exactly they are controlling. </p>
+    <h1>CSS Code:</h1>
+    <div class="row">
+        <div class="col-md-6">
+                                <img src="http://carolinegoodrich.github.io/bootstrap-resource/images/c2/cssCode1.png" width="550px" height="500px">
+        </div>
+        <div class="col-md-6">
+                                <img src="http://carolinegoodrich.github.io/bootstrap-resource/images/c2/cssCode2.png" width="550px" height="500px">
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+    <h1>CSS Output:</h1>
+ <img src="http://carolinegoodrich.github.io/bootstrap-resource/images/c2/cssOutput.png" width="550px" height="500px">    
+        </div>
+        </div>
+    <br>
+    <p>After you’ve looked over the examples and played around with the code, save the css and html file and reload your index page. See your styles!</p>
+    <div class="row">
+        <br>
+        <div class="col-md-7 col-md-offset-5">
+    <p><strong> Wow, beautiful.</strong></p>
+            </div>
+    </div>
+      </div>  
+        </div>
+                    <div class="row">
+                <div class="navButtons">
+                <div class="col-md-4 col-md-offset-2">
+             <p><a class="btn btn-default btn-lg" href="http://carolinegoodrich.github.io/bootstrap-resource/resources.html" role="button">Click to See Resources</a></p>
+                    </div>
+                <div class="col-md-4 col-md-offset-2">
+                <p><a class="btn btn-default btn-lg" href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter3.html" role="button">Continue to Chapter 3</a></p>
+                    </div>
+                </div>
+            </div>
+    
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://carolinegoodrich.github.io/bootstrap-resource/js/bootstrap.min.js"></script>
     </body>
-    
+        </div>
     <footer>
     <p>Copyright 2015, Caroline Goodrich</p>
     </footer>

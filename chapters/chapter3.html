@@ -26,12 +26,84 @@
                 <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter1.html">Chapter 1</a></li>
                 <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter2.html">Chapter 2</a></li>
                <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter3.html">Chapter 3</a></li>
+                <li><a href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter4.html">Chapter 4</a></li>
             </ul>
         </li>
     </ul>
-       
-<h1>Coming soon B)</h1>
+    <div class="container">
+<h1>CHAPTER THREE:</h1>
+        <h3>Bootstrap Bootcamp: Introduction to The Framework</h3>
+        <h4>The Who, What, Where, and the Why</h4>
+        <br>
+        <br>
+        <h4>The Who (Not the Band, for Copyright Infringement Purposes)</h4>
+        <p> The Who (not the band for fear of copyright infringement)
+The long version of Bootstrap’s name is actually the Twitter Bootstrap Design Framework. This doesn’t mean that it turns your website into a Twitter-like black hole, it just means that the people who designed that time suck of a URL designed the framework we will be using to control our website. </p>
+
+<p>The beauty of this “framework” is two things: one, it’s super easy to learn and to use and two, it’s built with a mobile-first mentality, which means your website becomes mobile responsive with almost no extra effort on your part. In the old way of web design, this would mean different tags and a whole other stylesheet. But no longer!!</p>
         
+    <br>
+        <h4>The What</h4>
+        <p>That seems like something I probably should have answered on the home page, but here’s a more indepth look at what exactly Bootstrap is.</p>
+
+<p><strong>Remember in the last chapter, where we learned how to use Header, DIV, and body tags, to name a few?</strong></p>
+
+<p>Well, Bootstrap takes these tags, and gives them styles by just using certain keywords. This is done by premade stylesheets, which we either download and link within our own documents, or use the online hosted versions linked in the header of our pages. This is important, because instead of spending time creating our own “button” class, we can just use Bootstraps! We can create easy and efficient styles in half of the time. </p>
+
+        <p><strong>I know what you’re thinking, “But what if it’s ugly?”</strong></p>
+
+<p>We can easily override Bootstrap’s styles with our own stylesheet. Our Stylesheet(“style.css”) will be loaded before the bootstrap.min.css file will be. This means we can use it as a basis for our own designs!
+</p>
+        
+        <br>
+        
+        <h4>The Where</h4>
+        <br>
+        <p>This framework is applied in our header tag, as I mentioned before. We simply download the files, place them into our own CSS project file and link them like a normal css header, or we use the files that are hosted online! This is the same mentality as using, say, a Google font or an image being hosted somewhere else on the Big Scary Internet. </p>
+
+<p>We then use these styles by applying them in ID or Class tags. Following the button example, here’s another example.</p>
+        <p>
+                <pre><code class=language-html>
+    &lt;div class=”row”> //now the items falling inside this div will be part of a row in a column system that I will explain in a minute be patient it’s a virtue. 
+
+  &lt;button type="button" class="btn btn-default">Don’t Click me</button> 
+//this creates a button, that is of the default style
+//the class btn dictates the style, the type “button” dictates the function.
+//you can change the style to different presets like, success or danger, by substituting it in for default. 
+    </code></pre>
+        </p>
+    <br>
+    <h4>The Why</h4>
+    <br>
+    <p>
+        Twitter Bootstrap is changing the way that sites are being made, simply to follow the lead of how websites are being viewed. The Mobile First Mentality is a good one to get behind, because 99.9% of people will view your website via a mobile device. Trust me, I’m a scientist. </p>
+
+    <p><strong>Bootstrap is easy to use, and makes your styling process consistent and quick.</strong></p>
+
+<p>Now, let’s talk about the grid system.  Can we talk about the grid system? I’ve been dying to talk about the grid system.</p>
+
+<p><strong>Bootstrap is based off of a 12-column system. This means, your content is grouped into sections, called col’s, and you tell them how much space they take up, out of 12.</strong></p>
+    <h6>AN EXAMPLE:</h6>
+        <pre><code class=language-html>
+    &lt;div class=”col-md-6”>
+    </code></pre>
+   <p> This means, that the content falling within this div, will be in a COLumn size of 6, or half of the screen, based on a MD or Medium screen size. </p>
+
+<p>In our earlier css example, we centered our content by using margin:auto; and things of that sort.</p>
+
+<p>No longer!! 
+    </p>
+        </div> 
+                    <div class="row">
+                <div class="navButtons">
+                <div class="col-md-4 col-md-offset-2">
+             <p><a class="btn btn-default btn-lg" href="http://carolinegoodrich.github.io/bootstrap-resource/resources.html" role="button">Click to See Resources</a></p>
+                    </div>
+                <div class="col-md-4 col-md-offset-2">
+                <p><a class="btn btn-default btn-lg" href="http://carolinegoodrich.github.io/bootstrap-resource/chapters/chapter4.html" role="button">Continue to Chapter 4</a></p>
+                    </div>
+                </div>
+            </div>
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

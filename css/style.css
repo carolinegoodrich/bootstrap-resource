@@ -29,6 +29,10 @@ background-image: linear-gradient(to top, #66C2C2 0%, #009999 90%);
     text-align: center; 
 }
 
+.nav {
+background-color:white;
+}
+
 .navButtons {
     margin-top: 10px;
 
